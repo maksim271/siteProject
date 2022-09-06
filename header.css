@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popup {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    cursor: pointer;
+}
+.popup-body {
+    margin-bottom: 1500px;
+    background: #312f30;
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 7px black;
+    display: grid;
+    grid-template-rows: 80px 320px 100px;
+}
+.title-pop {
+    position: relative;
+    user-select: none;
+    color: #ff3f40;
+    font-weight: 700;
+    font-size: 32px;
+    border-bottom: 1px solid #ff3f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputs input {
+    outline: none;
+    user-select: none;
+    border: 2px solid #ff3f40;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ff3f40;
+}
+.buttons button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #ff3f40;
+}
+.buttons button:hover {
+    background: #ff3f40;
+    transition: background-color 500ms;
+}
+
+
+
+.container {
+    background: #f6f2f1;
+    height: 400px;
+    padding-top: 20px;
+}
+header {
+    background: #312f30  ;
+    margin: 0 60px;
+    height: 60px;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 30px;
+    font-weight: 600;
+}
+.content {
+    font-size: 24px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.checklist {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.row1 {
+    display: flex;
+    height: 320px;
+}
+
+.photo {
+    flex: 0 0 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.content-row {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 80px 240px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    font-size: 33px;
+}
+.text {
+    font-size: 18px;
+}
+.row2 {
+    height: 320px;
+    display: flex;
+    border-left: 2px solid #ff3f40;
+}
+.content2 {
+    flex: 0 0 50%;
+    display: grid;
+    grid-template-rows: 80px 240px;
+}
+
+.photo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text2 {
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.logo:hover {
+    background: #ff3f40;
+    transition: background-color 500ms;
+}
+.reg:hover {
+    background: #ff3f40;
+    transition: background-color 500ms;
+}
+.content {
+    display: flex;
+    justify-content: end;
+}
+.reg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+
+
+.timer {
+    user-select: none;
+    border-top: 3px solid #ff3f40;
+    border-bottom: 3px solid #ff3f40;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 200px 300px;
+    background-image: url('195_rrrre-1920-1.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.timer-title {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 30px;
+    font-weight: 700;
+}
+.blocks {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.block {
+    width: 130px;
+    height: 80px;
+    background-color: #312f30;
+    margin: 0 20px;
+    color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 55px 25px;
+}
+.block-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff3f40;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.popup.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 600ms;
+}
+.popup-body.active {
+    margin-bottom: 0;
+    transition: margin-bottom 800ms ease-in;
+}
+
+
